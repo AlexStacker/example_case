@@ -19,20 +19,19 @@ module.exports = {
             }
           ];
           return rst;
-        })
-        .end()
-      .module
-        .rule('ts')
-          .use('ts-loader')
-          .tap(options => {
-            console.log(options);
-            options = {
-              ...options
-              // getCustomTransformers: () => ({
-              //   // before: [yourImportedTransformer]
-              // })
-            };
-            return options;
-          });
+        });
+      //   .end()
+      // .module
+      //   .rule('ts')
+      //     .use('ts-loader')
+      //     .tap(options => {
+      //       options = {
+      //         ...options
+      //         // getCustomTransformers: () => ({
+      //         //   // before: [yourImportedTransformer]
+      //         // })
+      //       };
+      //       return options;
+      //     });
   }
 };
