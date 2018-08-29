@@ -84,7 +84,7 @@
       true,
       {
         "multiline": "never",
-        "singleline": "never"
+        // "singleline": "never"
       }
     ],
     "align": [

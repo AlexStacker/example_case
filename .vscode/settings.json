@@ -1,11 +1,26 @@
 {
-    "files.associations": {
-        "*.vue": "vue"
-    },
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "html",
-        "vue"
-    ]
+  "files.associations": {
+      "*.vue": "vue"
+  },
+  "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "html",
+      "vue"
+  ],
+  // 开启 eslint 支持
+  "prettier.eslintIntegration": true,
+  // 保存时自动fix
+  "eslint.autoFixOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  // 使用 js-beautify-html 插件格式化 html
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  // 格式化插件的配置
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      // 属性强制折行对齐
+      "wrap_attributes": "force-aligned",
+    }
+  }
 }
