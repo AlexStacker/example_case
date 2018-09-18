@@ -8,6 +8,9 @@ module.exports = {
     '@vue/standard',
     '@vue/typescript'
   ],
+  "plugins":[
+    "html"
+  ],
   rules: {
     'semi': ["error", "always"],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
